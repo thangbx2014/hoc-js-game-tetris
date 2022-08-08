@@ -411,6 +411,7 @@ class Brick {
 
 function generateNewBrick() {
   brick = new Brick(Math.floor(Math.random() * 10) % BRICK_LAYOUT.length); // tao ra 1 id bat ki nam tu 0 -> 6
+  brick.draw();
 }
 
 board = new Board(ctx);
